@@ -121,9 +121,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 />
               </div>
               {/* Notifications bell */}
-              <a href="/notifications" className="relative p-2 rounded-lg hover:bg-gray-100">
-                <span className="text-lg">🔔</span>
-                <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+              <a href="/notifications" className="relative p-2 rounded-lg hover:bg-gray-100 group">
+                <span className="text-lg group-hover:scale-110 transition-transform block">🔔</span>
               </a>
               {/* Avatar */}
               <div className="flex items-center gap-2">

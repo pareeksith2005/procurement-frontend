@@ -60,8 +60,12 @@ export default function Dashboard() {
   return (
     <div className="space-y-6">
       {/* Hero Banner */}
-      <div className="rounded-2xl p-8 text-white shadow-xl relative overflow-hidden min-h-[220px] flex items-center bg-gradient-to-r from-[#081B3A] via-[#0d2a58] to-[#2563EB]">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#081B3A]/95 via-[#081B3A]/80 to-transparent"></div>
+      <div 
+        className="rounded-2xl p-8 text-white shadow-xl relative overflow-hidden min-h-[220px] flex items-center bg-cover bg-center"
+        style={{ backgroundImage: 'url(/bg-warehouse.png)' }}
+      >
+        <div className="absolute inset-0 bg-[#081B3A]/70 backdrop-blur-[2px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#081B3A] via-[#081B3A]/90 to-transparent"></div>
         <div className="relative z-10 max-w-xl">
           <p className="text-blue-300 text-sm font-medium tracking-wider uppercase mb-2">AI Procurement Dashboard</p>
           <h2 className="text-3xl font-bold mb-3">Welcome Back, Admin 👋</h2>
